@@ -1,0 +1,60 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Weather\01d.png" />
+    <None Remove="Assets\Weather\01n.png" />
+    <None Remove="Assets\Weather\02d.png" />
+    <None Remove="Assets\Weather\02n.png" />
+    <None Remove="Assets\Weather\03d.png" />
+    <None Remove="Assets\Weather\03n.png" />
+    <None Remove="Assets\Weather\04d.png" />
+    <None Remove="Assets\Weather\04n.png" />
+    <None Remove="Assets\Weather\09d.png" />
+    <None Remove="Assets\Weather\09n.png" />
+    <None Remove="Assets\Weather\10d.png" />
+    <None Remove="Assets\Weather\10n.png" />
+    <None Remove="Assets\Weather\11d.png" />
+    <None Remove="Assets\Weather\11n.png" />
+    <None Remove="Assets\Weather\13d.png" />
+    <None Remove="Assets\Weather\13n.png" />
+    <None Remove="Assets\Weather\50d.png" />
+    <None Remove="Assets\Weather\50n.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Weather\01d.png" />
+    <EmbeddedResource Include="Assets\Weather\01n.png" />
+    <EmbeddedResource Include="Assets\Weather\02d.png" />
+    <EmbeddedResource Include="Assets\Weather\02n.png" />
+    <EmbeddedResource Include="Assets\Weather\03d.png" />
+    <EmbeddedResource Include="Assets\Weather\03n.png" />
+    <EmbeddedResource Include="Assets\Weather\04d.png" />
+    <EmbeddedResource Include="Assets\Weather\04n.png" />
+    <EmbeddedResource Include="Assets\Weather\09d.png" />
+    <EmbeddedResource Include="Assets\Weather\09n.png" />
+    <EmbeddedResource Include="Assets\Weather\10d.png" />
+    <EmbeddedResource Include="Assets\Weather\10n.png" />
+    <EmbeddedResource Include="Assets\Weather\11d.png" />
+    <EmbeddedResource Include="Assets\Weather\11n.png" />
+    <EmbeddedResource Include="Assets\Weather\13d.png" />
+    <EmbeddedResource Include="Assets\Weather\13n.png" />
+    <EmbeddedResource Include="Assets\Weather\50d.png" />
+    <EmbeddedResource Include="Assets\Weather\50n.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Xamarin.Forms" Version="4.3.0.908675" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+</Project>
